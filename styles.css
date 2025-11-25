@@ -22,9 +22,11 @@ body{
   background: var(--blanco-humo);
   font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
-h1, h2, h3, h5, h6{
-  font-family: 'lato', Arial, Helvetica, sans-serif;
+
+h1, h2, h3, h4, h5, h6{
+  font-family:'Playfair Display', Georgia, serif;
 }
+
 
 /* ==============================
    MARCA
@@ -137,3 +139,20 @@ h1, h2, h3, h5, h6{
 .section-title{
   font-family:'Playfair Display', Georgia, serif;
 }
+
+/* ==============================
+   SCROLLING NAVBAR
+============================== */
+nav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+/* Navbar oculto cuando se está desplazando hacia abajo */
+nav.hide-nav{
+  transform: translateY(-100%);
+}
+
